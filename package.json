@@ -1,0 +1,44 @@
+{
+  "name": "robotocondensed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./robotocondensed.css",
+  "scripts": {
+    "prettysass": "prettier --write --print-width 120 --tab-width 4 --use-tabs sass/*.scss",
+    "sass": "node-sass --output-style expanded --precision 6 robotocondensed.scss robotocondensed.expanded.css",
+    "sass_autoprefixer": "postcss robotocondensed.expanded.css -u autoprefixer -o robotocondensed.prefixed.css --no-map",
+    "sass_minify": "cleancss --level 1 --output robotocondensed.css robotocondensed.prefixed.css"
+  },
+  "authors": [
+    "Bernhard Döbler <programmer@bardware.de>"
+  ],
+  "description": "The Open Sans fontface",
+  "keywords": [
+    "font"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FontFaceKit/robotocondensed.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FontFaceKit/robotocondensed/issues"
+  },
+  "homepage": "https://github.com/FontFaceKit/robotocondensed#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.0.2",
+    "clean-css-cli": "^4.2.0",
+    "node-sass": "^4.9.2",
+    "postcss-cli": "^6.0.0",
+    "prettier": "^1.14.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 1 version",
+    "not dead",
+    "IE 10",
+    "Firefox ESR"
+  ]
+}
